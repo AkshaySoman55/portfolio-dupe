@@ -1,0 +1,32 @@
+position relative              = positioned relative to its normal position
+
+height: 100vh; /* 1vh=19.2px    =  full screen height */
+
+justify-content: spacr between  =  2end il n starts
+
+ align-items: center;           = vertically center
+ 
+ list-style: none;              =  to hide dots
+
+ sudo class is a keyword added to a selector that specify a special; state of a element = hover
+ links:hover{
+  color: blue;
+}
+
+display inline blocks            =it respects both bottom margins and paddings
+
+position absolute               =  realtive to position 
+
+selector
+--------
+desendant selector   = parent space selector (writing)
+
+CSS grid system            = 
+
+1 fr  (frame) = 225px
+1rem= 16px
+
+object position = used to specify how an image or video should be positioned within xy coordinates
+
+
+

@@ -1,0 +1,245 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'roboto', monospace;
+}
+#container{
+  width: 100%;
+  height: 100vh; /* 1vh=19.2px =full screen height */
+  position: relative;
+  background-color: white;
+
+}
+#logo{
+  width: 120px;
+}
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin-left: 100px;
+}
+.listitem{
+  list-style: none;
+  display: inline-flex;
+  margin: 10px 20px;
+}
+.links{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+.links:hover{
+  color: blue;
+
+}
+.title{
+  margin-left: 5%;
+  margin-top: 10% ;
+}
+.title h1{
+  font-size: 40px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+#lastname{
+  color: orange;
+}
+#download{
+  background-color: black;
+  color: #f0ffff;
+  text-decoration: none;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 10px;
+}
+.images{
+  width: 50%;
+  height: 75%;
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+}
+.imagegroup{
+  position: absolute;
+  height: 100%;
+  bottom: 0px;/* initial */
+  left: 50%;
+  transform: translateX(-50%);/* to remove the left 50% effect */
+  transition: bottom 1s,left 1s;
+}
+.images:hover #shape{
+  bottom: 50px;
+}
+.images:hover #girl{
+  left:40%;
+}
+
+#About{
+  margin: 22% 8% 0% 8%;
+}
+.heading{
+  text-align: center;
+}
+.heading h2{
+  font-size: 35px;
+}
+
+.heading span{
+  color: green;
+  font-size: 20px;
+}
+.about_content{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+.about_image img{
+  width: 80%;
+  border-radius: 10px;
+}
+.about_para p{
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 500;
+}
+.information{
+  margin-top: 1rem;
+}
+.info_box{
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.info_box span{
+  margin-left: 1rem;
+}
+#Skill{
+  margin: 8% 8% 0px 8%;
+ 
+}
+.skill_container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+.skill_image img{
+  width: 90%;
+  padding-left: 4rem;
+  object-position: center;
+  
+}
+.progress_bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem 0px;
+  position: relative;
+}
+.progress_bar span{
+  font-size: 1rem;
+  font-weight:500;
+}
+.base_bar{
+  width: 100%;
+  height: 0.5rem;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0.5rem;
+}
+.html_bar{
+  background-color: orange;
+  width: 95%;
+}
+
+.css_bar{
+  background-color: orange;
+  width: 85%;
+}
+
+.js_bar{
+  background-color: orange;
+  width: 95%;
+}
+
+.react_bar{
+  background-color: orange;
+  width: 85%;
+}
+
+.icon_set{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 15px;
+}
+
+.icon:hover{
+  background-image: linear-gradient(to bottom right , yellow, rgb(217, 86, 5));
+}
+.icon i{
+  color: black;
+  font-size: 1.5rem;
+}
+
+.icon:hover i{
+  color: white;
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  10%{
+    transform: rotate(15deg);
+  }
+  20%{
+    transform: rotate(-15deg);
+  }
+  30%{
+    transform: rotate(15deg);
+  }
+  40%{
+    transform: rotate(-15deg);
+  }
+
+}
+
+.foot{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.arrow-up{
+  background-image: linear-gradient(to bottom right , yellow, rgb(217, 86, 5));
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px 50px 0px;
+}
+.arrow-up:hover i{
+  color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
